@@ -1,13 +1,10 @@
 *{
-	-webkit-transition: background .2s;
-	-o-transition: background .2s;
-	transition: background .2s;
-
-	-webkit-transition: box-shadow .2s;
-	-o-transition: box-shadow .2s;
-	transition: box-shadow .2s;
 	outline: 0;
+	-webkit-transition: background .3s,box-shadow .5s;
+	-o-transition: background .3s,box-shadow .5s;
+	transition: background .3s,box-shadow .5s;
 }
+
 body{
 	background: #000000;
 	font-family: 'Microsoft YaHei',"SimHei";
@@ -162,3 +159,4 @@ body{
 .mask,.det-contain{
 	display: none;
 }
+
