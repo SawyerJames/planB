@@ -4,8 +4,96 @@
 		"selected_items":
 		[
 			[
+				"pos",
+				"position"
+			],
+			[
+				"mag",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"pl",
+				"planB_alter"
+			],
+			[
+				"conf",
+				"confirmed"
+			],
+			[
+				"alter_c",
+				"alter_confirm"
+			],
+			[
+				"box",
+				"box"
+			],
+			[
+				"al",
+				"alter_cancel"
+			],
+			[
+				"pro",
+				"promise	.promise()"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
 				"con",
-				"confirm"
+				"confirmed"
+			],
+			[
+				"alter_",
+				"alter_confirm"
+			],
+			[
+				"alter",
+				"alter_cancel"
+			],
+			[
+				"mo",
+				"moveY"
+			],
+			[
+				"win",
+				"win_height"
+			],
+			[
+				"move",
+				"moveX"
+			],
+			[
+				"app",
+				"append	.append()"
+			],
+			[
+				"css",
+				"css	.css() - multiple"
+			],
+			[
+				"e",
+				"extend	$.extend()"
 			],
 			[
 				"d",
@@ -220,10 +308,6 @@
 				"margin-right"
 			],
 			[
-				"mar",
-				"margin-bottom"
-			],
-			[
 				"r",
 				"rows	Attr"
 			],
@@ -248,16 +332,8 @@
 				"autofocus	Attr"
 			],
 			[
-				"box",
-				"box-shadow"
-			],
-			[
 				"transi",
 				"transition"
-			],
-			[
-				"pa",
-				"padding-bottom"
 			],
 			[
 				"magin-",
@@ -270,14 +346,6 @@
 			[
 				"fl",
 				"float"
-			],
-			[
-				"fo",
-				"font-family"
-			],
-			[
-				"mag",
-				"margin"
 			],
 			[
 				"wid",
@@ -420,10 +488,6 @@
 				"vary2"
 			],
 			[
-				"re",
-				"removeClass	.removeClass()"
-			],
-			[
 				"u",
 				"u_nav_night"
 			],
@@ -450,70 +514,6 @@
 			[
 				"ro",
 				"root_contain"
-			],
-			[
-				"ra",
-				"radius-outside2"
-			],
-			[
-				"stor",
-				"StorageSetter"
-			],
-			[
-				"sot",
-				"StroageGetter"
-			],
-			[
-				"sett",
-				"StroageSetter"
-			],
-			[
-				"css",
-				"css	.css() - single"
-			],
-			[
-				"read",
-				"read_content"
-			],
-			[
-				"sc",
-				"scroll	.scroll()"
-			],
-			[
-				"aw",
-				"awake_font"
-			],
-			[
-				"ak",
-				"awake_meau"
-			],
-			[
-				"awa",
-				"awakeMeau"
-			],
-			[
-				"st",
-				"StroageGetter"
-			],
-			[
-				"ke",
-				"key"
-			],
-			[
-				"s",
-				"super"
-			],
-			[
-				"OV",
-				"overflow"
-			],
-			[
-				"backg",
-				"background-size"
-			],
-			[
-				"cl",
-				"clear"
 			]
 		]
 	},
@@ -523,7 +523,23 @@
 			"file": "js/controll.js",
 			"settings":
 			{
-				"buffer_size": 6931,
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/base.css",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -600,7 +616,8 @@
 	},
 	"expanded_folders":
 	[
-		"/D/project/planB"
+		"/D/project/planB",
+		"/D/project/planB/css"
 	],
 	"file_history":
 	[
@@ -750,6 +767,18 @@
 		"find_history":
 		[
 			"del",
+			"confirmed",
+			"z-index",
+			"addClass",
+			"arg",
+			"mask_button()",
+			"show_det",
+			"$mask.show()",
+			"show_det",
+			"show_det2",
+			"$mask",
+			"hide_det()",
+			"del",
 			";\n",
 			"$del_item",
 			"show_det",
@@ -868,7 +897,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -877,15 +906,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6931,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1408,
-								1408
+								0,
+								0
 							]
 						],
 						"settings":
@@ -898,11 +927,31 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -913,16 +962,6 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -933,16 +972,6 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -954,10 +983,189 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1200.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

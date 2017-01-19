@@ -1,14 +1,17 @@
-//自闭包函数
+//closure function
 ;(function(){
 	'use strict';
 //parameter
-	var $form_add = $('.test-add'),
+	var $win = $(window),
+		$body = $('body'),
+		$form_add = $('.test-add'),
 		test_list = [],
 		$mask = $('.mask'),
 		$msg = $('.msg'),
 		$det_contain = $('.det-contain'),
 		$msg_content = $('.msg-content'),
 		$msg_btn = $('.msg-button'),
+		$alerter = $('#mp3'),
 		$sanjiaoxing,
 		$det_item,
 		$del_item,
@@ -28,8 +31,88 @@
 //clear store--->
 // store.clear();
 
-//band form button
-//submit use form>>
+//rewrite alter
+	function planB_alter(arg){
+		if (!arg) {
+			console.log('error');
+		}
+		var conf = {}
+			,$box
+			,$alter_confirm
+			,$alter_cancel
+			,$dfd
+			,$mask
+			,confirmed
+			,timer
+			;
+		$dfd = $.Deferred();
+		//alter principle
+		if (typeof arg == 'string') {
+			conf.title = arg;
+		}
+		else{
+			conf = $.extend(conf, arg);
+		}	
+		//moudle alter
+		$box = $('<div class="alter">'+
+					'<div class="alter-title">'+ conf.title +'</div>'+
+					'<div class="alter-content">'+
+						'<button class="alter-confirm">PlanOK</button>'+
+						'<button class="alter-cancel">再等等</button>'+
+					'</div>'
+				+'</div>');
+		$mask = $('<div class="alter-mask"></div>');
+		$body.prepend($mask);
+		$body.prepend($box);
+		$alter_confirm = $('.alter-confirm');
+		$alter_cancel = $('.alter-cancel');	
+		//listen alter
+		timer = setInterval(function(){
+			if (confirmed !== undefined) {
+				$dfd.resolve(confirmed);
+				clearInterval(timer);
+				dismiss_alter();
+			}
+		},50);
+		//btn click
+		$alter_confirm.on('click',on_confiremd);
+		$alter_cancel.on('click',off_confirmed);
+		$mask.on('click',off_confirmed);
+		function on_confiremd(){
+			confirmed = true;
+		}
+		function off_confirmed(){
+			confirmed = false;
+		}
+		//dismiss alter
+		function dismiss_alter(){
+			$box.remove();
+			$mask.remove();
+		}
+		//alter adjust position
+		function adjust_alter_position(){
+			var win_width = $win.width(),
+				win_height = $win.height(),
+				box_width = $box.width(),
+				box_height =$box.height(),
+				moveX,
+				moveY;
+			moveX = (win_width - box_width)/2;
+			moveY = (win_height - box_height)/2-30;
+			$box.css({
+				left: moveX,
+				top: moveY,
+			});
+		}
+		//alter position will adjuest when change window 
+		adjust_alter_position();
+		$win.on('resize', function(){
+			adjust_alter_position();
+		});
+		return $dfd.promise();
+	}
+
+//band form button and submit use form>>
 	function add_item(){
 		$form_add.on('submit',function(event){
 			event.preventDefault();
@@ -48,11 +131,12 @@
 //band del button
 	function del_item(){
 		$del_item.on('click', function() {
-		var $this = $(this); //make this  switch jq-obj;
-		var $item = $this.parent();
-		var index = $item.data('index');
-		var tem = confirm ('确认删除？');
-		tem ? delete_item(index) : null;
+			var $this = $(this); //make this  switch jq-obj;
+			var $item = $this.parent();
+			var index = $item.data('index');
+			planB_alter('确认删除?').then(function(r){
+				r ? delete_item(index) : null;
+			});
 		})
 	}
 
@@ -69,8 +153,7 @@
 //band mask button
 	function mask_button(){
 		$mask.on('click',function() {
-			var i = confirm('更新了么?');
-			i ? hide_det() : null;
+			hide_det();
 		})
 	}
 
@@ -146,6 +229,7 @@
 		var $item = $del_item.parent();
 		var index = $item.data('index');
 		$msg.show();
+		$alerter.get(0).play();
 		show_det2(index);
 	}
 	function hide_msg(){
@@ -284,5 +368,4 @@
 		delete test_list[index];
 		refresh_list();
 	}
-
 })();
