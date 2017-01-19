@@ -239,6 +239,7 @@
 	function msg_btn(){
 		$msg_btn.on('click', function(event) {
 			event.preventDefault();
+			$alerter.get(0).pause();
 			hide_msg();
 		});
 	}
@@ -339,6 +340,7 @@
 			$mask.hide();
 			if ($msg.css('display') !== "none" ) {
 				$msg.hide();
+				$alerter.get(0).pause();
 			}
 		})
 		$old_det_title.on('dblclick',function() {
