@@ -69,8 +69,8 @@
 //band mask button
 	function mask_button(){
 		$mask.on('click',function() {
-		var i = confirm('更新了么？');
-		i ? hide_det() : null;
+			var i = confirm('更新了么?');
+			i ? hide_det() : null;
 		})
 	}
 
@@ -92,7 +92,7 @@
 //show or hide det
 	function show_det(index){   //--->>it use show det
 		show_det2(index);
-		$mask.show();
+		$mask.show(index);
 	}
 	function show_det2(index){  //--->>it also use notify_msg funtion
 		test_list_det(index);
@@ -119,6 +119,7 @@
 		}
 		check_date();
 		msg_btn();
+		mask_button();
 	}
 
 //check obj-dateTime and current time
@@ -200,7 +201,6 @@
 		//tirgger function 
 		del_item();
 		det_item();
-		mask_button();
 		checkbox_button();
 	}
 	function test_list_item(data,index){
